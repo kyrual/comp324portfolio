@@ -1,37 +1,62 @@
-.bg {
-    background-color: #FFF7F1;
-    background-size: cover;
-    padding: 300px;
-    top: 0;
-    bottom: 0; 
+*{
+    background-color: #F5E8DD;
+}
+/* COLOR PALETTE
+#B5C0D0 - grey blue
+#CCD3CA - sage green
+#F5E8DD - cream yellow
+#EED3D9 - pastel pink
+*/
+.navbar{
+    position: absolute;
+    left: 260px;
+    /*makes sure the nav bar overlaps the sidebar*/
+    z-index: 1;
 }
 
 .sidebar{
     text-align: center;
-    height: 100%;
-    width: 350px; 
-    position: fixed; 
+    position: absolute;
+    /*sidebar bg color*/
+    //background-color: #B5C0D0;
+    background-color: rgb(0,0,0,0.25);
+    /*sidebar text color*/
+    color: #F5E8DD;
+    padding: 20px 60px 20px 20px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+h3{
+    padding: 0px 10px 0px 10px;
 
-    top: 0;
-    left: 0;
-    
-    background-color: #FFE4C9;
+    background-color: transparent;
+    margin: 0px 0px;
+}
+p{
+    background-color: transparent;
 }
 
-.hpbody{
-    top: 0;
-
+#connect{
+    padding: 350px 0px 0px 0px;
 }
 
-.hpcontainer{
-	text-align: center;
-	margin: 10px 10px 10px 10px;
-	padding:200px 300px;
-    top: 0;
-
-	background: rgba(0,0,0,.75);
-	border: 2px solid #000;
+.aboutme{
+    //position: absolute;
+    text-align: center;
+    top: 0px;
+    /*add x amount to final value in margin (315)
+    top right bottom left
+    */
+    margin: 100px 200px 200px 515px;
+    padding: 220px;
+    background: rgba(204, 211, 202, 0.73);
+    border: 2px solid black;
 }
 
+#abme{
+    margin: 10px 100px;
+    background: transparent;
+}
 
 
