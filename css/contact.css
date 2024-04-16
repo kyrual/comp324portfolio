@@ -1,24 +1,13 @@
 body{
-    position: absolute;
     background-color: #FFE2E2;
     width:100%;
     height:100%;
     position: absolute;
     margin: 0;
     font-family: Arial;
-    background-image: url("https://i.imgur.com/CYuYg7D.jpeg");
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
-/* COLOR PALETTE
-#FFC7C7 - pink
-#FFE2E2 - baby pink
-#F6F6F6 - grey
-#8785A2 - blue
-*/
-
-/*MAKE MODIFICATIONS TO THE NAV BAR*/
 .navbar{
     position: fixed;
     top: 500px;
@@ -61,7 +50,6 @@ body{
 ul{
     color: #e8e7f1;
     position: relative;
-
     top: 25px;
     font-size: 15px;
     text-align: left;
@@ -81,18 +69,15 @@ h3{
 p{
     background-color: transparent;
 }
-
-.connect{
-    padding: 300px 0px 0px 0px;
-    bottom: 0px;
-}
 i{
     padding: 2px;
 
 }
-
-/*MAKE MODS TO THAT BIG BOX IN THE MIDDLE*/
-.instruct{
+.connect{
+    padding: 300px 0px 0px 0px;
+    bottom: 0px;
+}
+.msg{
     font-family:  monospace;
     position: relative;
     text-align: center;
@@ -101,39 +86,24 @@ i{
     /*add x amount to final value in margin (315)
     top right bottom left
     */
-    margin: 100px 200px 450px 515px;
-    padding: 220px;
+    margin: 100px 200px 200px 515px;
+    padding: 100px;
     background: rgba(234, 226, 226, 0.76);
     border: 2px solid #504d73;
 }
-#inst{
-    margin: 10px 100px;
-    background: transparent;
-}
-.porttitle{
-    font-size: 100px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    color: white;
-    left: 530px;
-    bottom: 0px;
-    top: 815px;
-    text-shadow: 0 0 5px #504d73;
-}
-.portfolio{
+form{
+    text-align: left;
     position: relative;
-    margin: 0px;
-    padding: 500px;
-    /*top color: #FEF9F5 */
-    background-color: black;
-    z-index: -1;
 }
-
-.grid{
-    display: grid;
-    z-index: 2;
+input{
+    width: 100%;
+    margin: 5px;
 }
-
-
+#mesag{
+    height: 500px;
+}
+#sub{
+    text-align: center;
+    height: auto;
+    width: auto;
+}
