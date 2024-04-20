@@ -9,6 +9,8 @@ body{
     background-image: url("https://i.imgur.com/CYuYg7D.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
+
 }
 
 /* COLOR PALETTE
@@ -40,7 +42,7 @@ body{
 }
 #name{
     background-color: #FFC7C7;
-    padding: 25px 122px 25px 106px;
+    padding: 25px 128px 25px 100px;
 }
 .sidebar{
     text-align: center;
@@ -87,8 +89,14 @@ p{
     bottom: 0px;
 }
 i{
-    padding: 2px;
+    padding: 2px 0px;
+    text-decoration: none;
 
+}
+
+i:hover{
+    font-size:2em;
+    transition: 1s ease-out;
 }
 
 /*MAKE MODS TO THAT BIG BOX IN THE MIDDLE*/
@@ -119,21 +127,47 @@ i{
     color: white;
     left: 530px;
     bottom: 0px;
-    top: 815px;
+    top: 860px;
     text-shadow: 0 0 5px #504d73;
 }
 .portfolio{
     position: relative;
     margin: 0px;
-    padding: 500px;
+    padding: 1500px;
     /*top color: #FEF9F5 */
-    background-color: black;
+    background-image: linear-gradient(#000000 40%, #FFE2E2);
     z-index: -1;
 }
-
 .grid{
     display: grid;
     z-index: 2;
 }
+.resume{
+    font-size: 80px;
+    font-family: monospace;
+    color: #8785A2;
+    position: relative;
+    margin: 10px 0px 450px 375px;
+    padding: 20px;
+    border: 2px solid black;
+}
+#copy{
+    position: relative;
+}
+
+.footer{
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    z-index: 5;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    border-top: 4px solid #120f1a;
+    background-color: #1e1c2c;
+    color: white;
+}
+
 
 
