@@ -30,9 +30,8 @@ repoLibrary(username)
 
                 // Create the html markup for each li
                 ul.innerHTML = (`
-                <p><strong>Repo:</strong> ${data[i].name}</p><br>
+                <p><strong>Repo:</strong> <a href="${data[i].html_url}">${data[i].name}</a></p><br>
                 <p><strong>Description:</strong> ${data[i].description}</p><br>
-                <p><strong>URL:</strong> <a href="${data[i].html_url}">${data[i].html_url}</a></p>
             `);
 
                 // Append each li to the ul

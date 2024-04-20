@@ -134,7 +134,7 @@ nav i{
 .portfolio{
     position: relative;
     margin: 0px;
-    padding: 100px 50px 1500px 525px;
+    padding: 100px 100px 1500px 450px;
     height: 100%;
     /*top color: #FEF9F5 */
     background-image: linear-gradient(#000000 40%, #FFE2E2);
@@ -145,20 +145,21 @@ nav i{
     text-align: center;
     font-family: monospace;
     position: relative;
-
     z-index: 10;
 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 #repos ul{
+    flex: 1 1 auto;
     position: relative;
     border: 1px solid #FFC7C7;
+    border-radius: 2%;
+
     top: 10px;
-    margin: 15px 10px;
-    padding: 100px 20px;
+    margin: 10px;
+    padding: 150px 50px;
     background-color: rgb(246, 233, 233);
 }
 
