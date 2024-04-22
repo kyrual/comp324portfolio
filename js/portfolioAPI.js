@@ -6,19 +6,19 @@ function repoLibrary(username) {
 
 repoLibrary(username)
     .then(response => response.json()) // parse response into json
-    .then(data => {
+    .then(repo => {
         // update html with data from github
-        for (let i in data) {
+        for (let i in repo) {
             // Get the ul with id of userRepos
 
-            if (data.message === "Not Found") {
+            if (repo.message === "Not Found") {
                 let p = document.getElementById('repos');
 
                 // Create variable that will create li's to be added to ul
                 let ul = document.createElement('ul');
 
                 ul.innerHTML = (`
-                <p><strong>No account exists with username:</strong> ${gitHubUsername}</p>`);
+                <h1>There are no repositories to display, sorry!</h1>`);
                 // Append each li to the ul
                 p.appendChild(ul);
             } else {
@@ -30,8 +30,9 @@ repoLibrary(username)
 
                 // Create the html markup for each li
                 ul.innerHTML = (`
-                <p><strong>Repo:</strong> <a href="${data[i].html_url}">${data[i].name}</a></p><br>
-                <p><strong>Description:</strong> ${data[i].description}</p><br>
+                <p><strong>Repo:</strong> <a href="${repo[i].html_url}">${repo[i].name}</a></p><br>
+                <p><strong>Description:</strong> ${repo[i].description}</p><br>
+                <img src="https://api.github.com/users/${username}/${repo[i]}/img/bg.jpg">
             `);
 
                 // Append each li to the ul

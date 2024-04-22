@@ -2,15 +2,13 @@ body{
     position: absolute;
     background-color: #FFE2E2;
     width:100%;
-    height:100%;
-    position: absolute;
-    margin: 0;
+    height: 100%;
     font-family: Arial;
     background-image: url("https://i.imgur.com/CYuYg7D.jpeg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     overflow-x: hidden;
-
+    padding-bottom: 100px;
 }
 
 /* COLOR PALETTE
@@ -39,11 +37,11 @@ body{
     z-index: 1;
     top: 0px;
     left: 0px;
+    background-color: #ffbfcd;
+    padding: 25px 133px 25px 75px;
+    color: white;
 }
-#name{
-    background-color: #FFC7C7;
-    padding: 25px 128px 25px 100px;
-}
+
 .sidebar{
     text-align: center;
     position: fixed;
@@ -55,7 +53,7 @@ body{
     top: 0px;
     left: 0px;
     bottom: 0px;
-    border-right: 3px solid #FFC7C7;
+    border-right: 3px solid #ffbfcd;
 }
 .sidebar img{
     border: 2px solid #FFC7C7;
@@ -109,7 +107,7 @@ nav i{
     /*add x amount to final value in margin (315)
     top right bottom left
     */
-    margin: 100px 200px 450px 515px;
+    margin: 100px 200px 455px 515px;
     padding: 220px;
     background: rgba(234, 226, 226, 0.76);
     border: 2px solid #504d73;
@@ -122,12 +120,9 @@ nav i{
 .porttitle{
     font-size: 100px;
     position: absolute;
-    width: 100%;
-    height: 100%;
     z-index: 2;
     color: white;
     left: 530px;
-    bottom: 0px;
     top: 860px;
     text-shadow: 0 0 5px #504d73;
 }
@@ -152,7 +147,7 @@ nav i{
 }
 
 #repos ul{
-    flex: 1 1 auto;
+    flex: auto;
     position: relative;
     border: 1px solid #FFC7C7;
     border-radius: 2%;
@@ -165,16 +160,22 @@ nav i{
 
 .resume{
     position: relative;
-    font-size: 80px;
-    font-family: Arial;
     color: #8785A2;
-    margin: 10px 0px 800px 375px;
-    padding: 20px 50px;
-    border: 2px solid black;
+    padding: 300px 0px;
+    background-color: #FEE1E1;
+    /*border: 2px solid black;*/
+    z-index: -1;
 }
-
+.resume p {
+    position: relative;
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px 0px 0px 625px;
+}
 .resume img{
     position: relative;
+    margin: 0px 0px 0px 200px;
 }
 
 #copy{
@@ -182,21 +183,14 @@ nav i{
 }
 
 footer{
-    position: relative;
     text-align: center;
     font-family: monospace;
     font-size: 12px;
-    z-index: 5;
-    width: 100%;
-    overflow: hidden;
+    z-index: -1;
     left: 0px;
     bottom: 0px;
-    right: 0px;
     border-top: 2px solid #594a7c;
     background-color: #1e1c2c;
     color: white;
+    padding: 0px 0px 0px 250px;
 }
-
-
-
-
