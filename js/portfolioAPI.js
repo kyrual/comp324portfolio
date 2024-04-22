@@ -25,9 +25,9 @@ repoLibrary(username)
                 let ul = document.createElement('ul');
 
                 ul.innerHTML = (`
-                <p><a href="${repo[i].html_url}">${repo[i].name}</a></p>
+                <a href="${repo[i].html_url}"><p id="title">${repo[i].name}</p>
                 <p>${repo[i].description}</p>
-                <img src="https://raw.githubusercontent.com/${username}/${repo[i].name}/main/img/bg.jpg">
+                <img src="https://raw.githubusercontent.com/${username}/${repo[i].name}/main/img/bg.jpg"></a>
             `);
                 p.appendChild(ul);
             }
