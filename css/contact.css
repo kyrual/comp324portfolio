@@ -77,10 +77,10 @@ i{
     padding: 300px 0px 0px 0px;
     bottom: 0px;
 }
-.msg{
+form{
     font-family:  monospace;
     position: relative;
-    text-align: center;
+    text-align: left;
     top: 0px;
     color: #8785A2;
     /*add x amount to final value in margin (315)
@@ -91,15 +91,12 @@ i{
     background: rgba(234, 226, 226, 0.76);
     border: 2px solid #504d73;
 }
-form{
-    text-align: left;
-    position: relative;
-}
+
 input{
     width: 100%;
     margin: 5px;
 }
-#mesag{
+textarea{
     height: 500px;
 }
 #sub{
